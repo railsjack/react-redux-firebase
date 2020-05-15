@@ -218,7 +218,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
 
-function TodosList() {
+function EnhancedTodosList() {
   const todos = useSelector(state => state.firebase.ordered.todos)
 
   if (!isLoaded(todos)) {
